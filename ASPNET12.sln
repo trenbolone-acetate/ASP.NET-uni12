@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET12", "ASPNET12.csproj", "{11C07EBC-6C73-4084-A7B4-8AB02572B934}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C07EBC-6C73-4084-A7B4-8AB02572B934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C07EBC-6C73-4084-A7B4-8AB02572B934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C07EBC-6C73-4084-A7B4-8AB02572B934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C07EBC-6C73-4084-A7B4-8AB02572B934}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
