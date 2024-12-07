@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model User
+
+<table>
+    <tr>
+        <td><label asp-for="FirstName">First Name</label></td>
+        <td><input asp-for="FirstName"/></td>
+        <td><span asp-validation-for="FirstName" class="text-danger"></span></td>
+    </tr>
+    <tr>
+        <td><label asp-for="LastName">LastName</label></td>
+        <td><input asp-for="LastName"/></td>
+        <td><span asp-validation-for="LastName" class="text-danger"></span></td>
+    </tr>
+    <tr>
+        <td><label asp-for="Age">Age</label></td>
+        <td><input asp-for="Age"/></td>
+        <td><span asp-validation-for="Age" class="text-danger"></span></td>
+    </tr>
+</table>

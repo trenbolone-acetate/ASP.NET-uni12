@@ -1,0 +1,74 @@
+﻿@model List<User>
+
+@{
+    ViewData["Title"] = "Users";
+    Layout = Layout;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div id="content">
+    <form asp-controller="User" asp-action="Search" method="get">
+        <input type="text" name="search" placeholder="Search" />
+        <input type="submit" value="Search" />
+    </form>
+    
+    @if (Model != null)
+    {
+        <table>
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.Age</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    <a id="create" href="/User/Create">Create</a>
+</div>
+</body>
+</html>
+<style>
+    #content{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #content > *{
+        margin: 1%;
+    }
+    table{
+        width: 80%;
+    }
+    td, th{
+        text-align: center;
+        padding: 1%;
+        border: 1px solid black;
+    }
+    #create{
+        width: 10%;
+        font-size: large;
+        background: #0b5ed7;
+        text-decoration:none;
+        color: ivory;
+        padding: 1%;
+    }
+</style>

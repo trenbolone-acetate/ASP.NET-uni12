@@ -1,0 +1,18 @@
+﻿@model Task<User>
+
+<h2>User Details</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>First Name</dt>
+        <dd>@Model.Result.FirstName</dd>
+
+        <dt>Last Name</dt>
+        <dd>@Model.Result.LastName</dd>
+
+        <dt>Age</dt>
+        <dd>@Model.Result.Age</dd>
+
+    </dl>
+</div>
+<a asp-action="Index">Back to List</a>

@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model User
+@{
+    ViewData["Title"] = "Create User";
+}
+
+<h1>Create</h1>
+<h4>User</h4>
+<hr/>
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-controller="User" asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @await Html.PartialAsync("_CreateFormPartial",Model)
+            <div class="bottom-actions">
+                <input type="submit" value="Create" class="btn btn-success" /> |
+                <a class="btn btn-info" asp-action="Index">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+</div>
+@section Scripts {
+@{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
